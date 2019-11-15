@@ -22,7 +22,7 @@ pipeline{
 			stage('Deliver'){
 				steps{
 				sh './jenkins/script/deliver.sh'
-				input massage: 'finished using the website'
+				input message: 'finished using the website'
 				sh './jenkins/script/kill.sh'
 				}
 				}
